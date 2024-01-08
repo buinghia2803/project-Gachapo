@@ -1,0 +1,201 @@
+{
+  "common": {
+    "home": "ダッシュボード",
+    "title_login": "ログイン",
+    "login": "ログイン",
+    "forgot_password": "パスワード忘れ",
+    "logout": "ログアウト",
+    "dashboard": "ダッシュボード",
+    "create_new": "新規作成",
+    "search": "検索",
+    "search_detail": "詳細検索",
+    "clear": "クリア",
+    "total": "合計",
+    "update": "更新",
+    "register": "登録",
+    "create": "新規作成",
+    "add": "追加",
+    "cancel": "キャンセル",
+    "all": "すべて",
+    "no_data_in_table": "データがありません。",
+    "download_csv": "CSVダウンロード",
+    "upload_csv": "CSVアップロード",
+    "option_please_select": "選択してください",
+    "confirm_delete": "削除確認",
+    "yes": "はい",
+    "no": "いいえ",
+    "more": "もっと見る",
+    "less": "省略",
+    "genders": {
+      "both": "その他",
+      "male": "男性",
+      "fermale": "女性"
+    },
+    "secret_key": "確認コード",
+    "please_enter": "入力してください",
+    "empty": "空き",
+    "choose_files_or_drag_and_drop_here": "ファイルを選択するか、ここにドラッグ&ドロップしてください",
+    "not_available": "利用不可",
+    "action": "アクション",
+    "no_data": "データがありません。"
+  },
+  "messages": {
+    "error": {
+      "max_character_exceeded": "{name} は {max} 文字以下で入力してください。",
+      "failed_to_create": "{name}を作成できませんでした。",
+      "failed_to_register_contact": "エラーが発生しました。再度お試しください。",
+      "failed_to_update": "{name}を更新できませんでした。",
+      "failed_to_delete": "{name}を削除できませんでした。",
+      "failed_to_get": "{name}を取得できませんでした。",
+      "failed_to_login": "ログインに失敗しました。",
+      "username_password_unmatch": "メールアドレスまたはパスワードが正しくありません。",
+      "not_active": "アカウントはアクティブ化されていません。 アクティベートしてください",
+      "failed_to_action": "{name}に失敗しました",
+      "unmatch_value": "{name1}/{name2}と一致するデータを見つけません。",
+      "bad_email_format": "無効なメール",
+      "unmatch_confirmation_email": "{name}と一致しません。",
+      "unmatch_password": "パスワードとパスワード確認が一致しません。",
+      "required": "この項目は必須です。",
+      "invalid_format": "無効な形式",
+      "numeric": "数字で入力してください。",
+      "more_than": "{name}は{target}以上で入力してください。",
+      "less_than": "{name}は{target}以下で入力してください。",
+      "date_before": "{name}は{target}より前の日付を入力してください。",
+      "min_max": "{min}文字以上{max}文字以内で入力して下さい。",
+      "min": "{name}は{min}字以上で入力してください。",
+      "max": "{max}文字以下で入力してください。",
+      "color_hex": "無効な形式。",
+      "failed_to_sent_mail": "{name}メールを送信できませんでした。",
+      "decimal": "{name} フィールドは数値と10進数である必要があります",
+      "invalid_url": "無効なURL",
+      "invalid_csv": "拡張子がcsv、xlsxのファイルのみが受け入れられます",
+      "invalid_password": "大文字、小文字、数字を含める8文字以上32文字以内で入力して下さい。",
+      "invalid_phone": "電話番号の形式が正しくありません。",
+      "integer": "整数のみを入力してください",
+      "invalid_image": "拡張子がjpg、jpeg、png、gifのファイルのみが受け入れられます",
+      "duplicate_value": "商品コードはこのセットに追加されました。",
+      "regex_email": "間違った形式を入力しました。",
+      "forgot_password": "パスワー再設定リンクの有効期限が切れています。もう一度やり直してください。",
+      "send_email": "エラーが発生しました。再度ご入力ください。",
+      "reset_password": "パスワードが8~32文字(大文字、小文字、数字を含める)を入力してください。",
+      "review_gacha": "レビューの投稿に失敗しました。"
+    },
+    "confirmation": {
+      "delete": "{name}を削除してもよろしいですか?",
+      "reset_password": "パスワードのリセットに成功しました。",
+      "forgot_password": {
+        "send_mail": "登録いただいたメールアドレスへパスワー再設定リンクを送信しました。"
+      }
+    },
+    "information": {
+      "created": "正常に作成されました。",
+      "updated": "正常に更新されました。",
+      "deleted": "正常に削除されました。",
+      "login": "正常にログインしました。",
+      "2nd_factor": "確認コードがメールに送信されました。",
+      "action": "{name}が成功しました",
+      "sent_mail_success": "正常に{name}メールを送るされました。",
+      "review_gacha": "レビューの投稿に成功しました。"
+    }
+  },
+
+  "companies" : {
+    "title_head": "出店企業申請",
+    "company": "企業名",
+    "company_furigana": "企業名（フリガナ）",
+    "person_manager": "担当者名",
+    "person_manager_furigana": "担当者名（フリガナ）",
+    "phone": "電話番号",
+    "email": "Eメール",
+    "password": "パスワード",
+    "password_confirm": "パスワード（確認）",
+    "company_information": "企業内容",
+    "site_url": "サイトURL",
+    "company_address": "所在地",
+    "registered_copy_attachment": "登記簿謄本添付\n（PDFにてアップロード）",
+    "consent_document": "同意書",
+    "upload": "アップロード",
+    "max_20MB": "ファイルの最大容量は20MBです。",
+    "agree": "同意する",
+    "server_error": "企業登録が失敗しました。再度お試しください。",
+    "register_completed": "企業登録が完了しました。"
+  },
+
+  "contacts":  {
+    "title": "キャッチコピー",
+    "btn_exhibition": "出展申請はこちら",
+    "feature": "特徴",
+    "inquiry": "お問い合わせ",
+    "name": "お名前",
+    "contact_type": "ご連絡について",
+    "email": "メールアドレス",
+    "phone": "電話番号 ",
+    "inquiry_type": "お問い合わせ種類",
+    "content": "お問い合わせ内容詳細",
+    "privacy_policy": "プライバシーポリシー",
+    "agree": "に同意",
+    "register": "送信",
+    "more_info": "詳しく知りたい方へ",
+    "request_material": "資料請求する"
+  },
+
+  "password_resets" :{
+    "title": "パスワード再設定",
+    "password": "パスワード",
+    "password_confirmation": "パスワードの確認",
+    "forgot_password_title": "パスワード再発行",
+    "email": "登録メールアドレス"
+  },
+
+  "headers": {
+    "by_category" : "カテゴリー",
+    "sign_up": "新規登録",
+    "notify": "通知",
+    "search_header": "キーワード検索",
+    "register_company": "出店希望の企業様はこちら"
+  },
+
+  "footers" : {
+    "above": {
+      "title": "オンラインガチャ",
+      "sub_title_1": "かんたん登録でガチャを",
+      "sub_title_2": "はじめよう！"
+    },
+    "below": {}
+  },
+
+  "register_user": {
+    "title":"新規登録",
+    "name":"お名前",
+    "name_furigana":"フリガナ",
+    "email":"Eメール",
+    "password":"パスワード",
+    "password_confirmation":"パスワード（確認）",
+    "birthday":"生年月日",
+    "gender":"性別",
+    "profession":"職業",
+    "address":"住所",
+    "address_first":"住所1",
+    "address_second":"住所2",
+    "address_type":"基本設定",
+    "phone":"電話番号",
+    "category":"興味のあるカテゴリー",
+    "card_info":"クレジットカード情報登録",
+    "card_list":"ご利用可能なカード一覧",
+    "card_number":"カード番号",
+    "security_code":"セキュリティーコード",
+    "card_name":"カード名義",
+    "date_of_expiry":"有効期限",
+    "register_completed": "ユーザー登録が完了しました。"
+  },
+  "home": {
+    "gacha_new_arrival": "新着商品",
+    "gacha_favorite": "人気の商品",
+    "gacha_recommend": "おすすめの商品",
+    "show_more": "もっと見る"
+  },
+
+  "review_gacha": {
+    "title": "評価"
+  }
+}

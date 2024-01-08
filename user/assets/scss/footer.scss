@@ -1,0 +1,114 @@
+.login-footer {
+  background: url("../../assets/images/bg-login-footer.png") no-repeat top left;
+  background-size: auto 100%;
+  position: relative;
+
+  &:before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 2.8em;
+    color: $color_black;
+  }
+
+  p {
+    font-weight: 700;
+    font-size: 2.4em;
+    color: $color_black;
+  }
+}
+
+.btn-user-login, .btn-user-register {
+  min-width: 120px;
+}
+
+.main-footer {
+  background: $bg_222222;
+  font-weight: 500;
+  color: white;
+
+  .footer-title {
+    font-weight: 300;
+    font-size: 3em;
+  }
+
+  .s-footer,
+  .f-footer {
+    font-size: 1.4em;
+
+    div {
+      padding: 8px 0;
+    }
+    a {
+      color: white;
+    }
+  }
+
+  .c-footer {
+    font-size: 1.8em;
+  }
+}
+
+.footer-login {
+  position: fixed;
+  width: 100%;
+  border: 0.5px solid $color_grey;
+  background: white;
+  padding: 8px;
+  bottom: 0;
+  left: 0;
+  color: $color_icon;
+  font-size: 3.7em;
+  z-index: 9;
+
+  svg {
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-login {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-footer {
+    //border-top: 30px solid $bg_form_control;
+    background-size: 100% 100%;
+
+    &__wrap {
+      max-width: 580px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 28px 20px;
+    }
+
+    &__action {
+      display: flex;
+      align-items: flex-end;
+
+      p {
+        font-size: 3em;
+        font-weight: 300;
+        line-height: 1;
+        margin-right: auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .main-footer {
+    .s-footer, .f-footer {
+      font-size: 1.8em;
+    }
+  }
+}

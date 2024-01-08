@@ -1,0 +1,1378 @@
+@import "color";
+@import "variable";
+
+//////////////page rgister user ///////////////////
+.box-credit-card {
+  .form-group label {
+    font-weight: 500;
+  }
+}
+
+.date_of_expiry_year,
+.date_of_expiry_month {
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  .form-group__category_id {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > div {
+      width: auto;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-default {
+    .box-address {
+      & > legend {
+        width: 174px;
+        float: left;
+      }
+
+      label {
+        width: 95px !important;
+      }
+
+      .form-group:not(:last-child) {
+        margin-bottom: 25px;
+      }
+
+      .form-group:last-child {
+        margin-bottom: 0px;
+      }
+    }
+
+    .form-group .custom-control {
+      width: calc(50% - 20px);
+    }
+
+    .btn-submit {
+      margin-left: -77px;
+    }
+  }
+}
+
+///////////////// Begin Register company //////////////////////////////
+.box-input-file {
+  input {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+  }
+
+  &__text {
+    font-size: 1.6em;
+    font-weight: 700;
+  }
+}
+
+///////////////// End Register company //////////////////////////////
+///////////////// Begin Company application //////////////////////////////
+.page-company-application {
+
+}
+
+.cp-catch {
+  background: url("../../assets/images/bg-company-application.png") no-repeat center center;
+  background-size: auto auto;
+  min-height: 400px;
+
+  h1 {
+    font-size: 3em;
+    color: $color_grey_2;
+    font-weight: 700;
+  }
+}
+
+.cp-feature {
+  &__images {
+    text-align: center;
+  }
+
+  &__title,
+  &__text {
+    color: $color_black;
+    font-weight: 300;
+    font-size: 1.6em;
+  }
+}
+
+.cp-flow {
+  &__content {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+
+  &__item {
+    width: calc(50% - 30px);
+    margin: 0 15px;
+  }
+
+  &__images {
+    width: 100%;
+    height: calc(50vw - 50px);
+    border-radius: 50%;
+
+    img {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    color: $color_black;
+    font-weight: 700;
+    font-size: 1.6em;
+    text-align: center;
+  }
+}
+
+.cp-faq {
+  &__item {
+    border: 1px solid $color_grey;
+    text-align: left;
+  }
+
+  &__question {
+    padding: 10px 15px;
+    border: 0;
+    color: $color_black;
+    font-size: 1.8em;
+    font-weight: 500;
+    position: relative;
+
+    .icon-chevron-down {
+      position: absolute;
+      right: 10px;
+      top: 14px;
+    }
+
+    span:first-child {
+      padding-right: 15px;
+    }
+
+    &.not-collapsed .icon-chevron-down {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__answer {
+    border-top: 1px solid $color_grey;
+    padding: 10px 15px 10px 25px;
+    color: $color_black;
+    font-size: 1.6em;
+    font-weight: 500;
+
+    span:first-child {
+      padding-right: 15px;
+    }
+  }
+}
+
+@media (min-width: 568px) {
+  .cp-flow__images {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .cp-catch {
+    min-height: 500px;
+  }
+
+  .cp-feature__content {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    justify-content: space-between;
+  }
+
+  .cp-feature__item {
+    width: calc(33% - 30px);
+  }
+
+  .cp-request-document {
+    .btn {
+      max-width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .cp-feature__title, .cp-feature__text {
+    font-size: 2em;
+  }
+
+  .cp-flow__content {
+    justify-content: space-between;
+  }
+
+  .cp-flow__title {
+    font-size: 2.4em;
+  }
+
+  .cp-flow__item {
+    width: calc(25% - 30px);
+    margin: 0 15px;
+  }
+
+  .cp-faq__question {
+    font-size: 2.4em;
+  }
+
+  .cp-faq__answer {
+    font-size: 2.2em;
+  }
+
+  .cp-contact {
+    .form-default {
+      text-align: center;
+    }
+
+    .form-default form {
+      margin: 0 auto;
+      display: inline-block;
+      text-align: left;
+    }
+  }
+
+  .cp-request-document {
+    .btn {
+      line-height: 50px;
+      height: auto;
+    }
+
+    &__wrap {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .cp-catch {
+    min-height: 700px;
+    background-size: 100% auto;
+
+    h1 {
+      font-size: 6em;
+    }
+
+    .btn {
+      line-height: 50px;
+      height: auto;
+      border-radius: 36px;
+    }
+  }
+
+  .cp-feature {
+    &__content {
+      width: 100%;
+      margin: 0;
+    }
+
+    &__item {
+      width: calc(33.3% - 55px);
+    }
+  }
+
+  .cp-flow {
+    &__content {
+      width: 100%;
+      margin: 0;
+    }
+
+    &__item {
+      width: 180px;
+      max-width: 25%;
+      margin: 0;
+    }
+  }
+
+  .cp-faq__question {
+    font-size: 3.4em;
+    padding: 20px 25px;
+
+    .icon-chevron-down {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+    }
+  }
+
+  .cp-faq__answer {
+    font-size: 3.1em;
+    padding: 20px 25px 20px 50px;
+  }
+}
+
+///////////////// End Company application //////////////////////////////
+///////////////// Begin user login //////////////////////////////
+.form-login {
+  margin: 0 auto;
+  max-width: 670px;
+}
+
+///////////////// End user login //////////////////////////////
+///////////////// Begin search //////////////////////////////
+.s-sidebar {
+  background: white;
+
+  &__title {
+    padding: 10px 15px;
+    color: $color_black !important;
+    font-size: 1.8em;
+    font-weight: 500;
+    position: relative;
+    background: transparent !important;
+    box-shadow: 0 0 0 !important;
+    border: 1px solid $color_grey;
+    border-radius: 0;
+
+    .icon-chevron-down {
+      position: absolute;
+      right: 10px;
+      top: 14px;
+    }
+
+    &.not-collapsed .icon-chevron-down {
+      transform: rotate(180deg);
+    }
+  }
+
+  .box-filter {
+    border: 1px solid $color_grey;
+    margin: 0;
+    border-top: 0;
+    padding: 20px;
+  }
+}
+
+.s-content {
+  margin-top: 30px;
+  padding: 30px 15px;
+
+  .gacha__list {
+    margin-top: 20px;
+  }
+
+  .gacha__item:first-child, .gacha__item:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .s-sidebar {
+    width: 360px;
+
+    &__title {
+      display: none;
+    }
+
+    .box-filter {
+      display: inline-block !important;
+      border: 0;
+      background: white;
+      padding: 35px;
+    }
+  }
+
+  .s-content {
+    width: calc(100% - 400px);
+    margin-left: 40px;
+    margin-top: 0;
+    padding: 30px 20px;
+  }
+
+  .page-search {
+    .container {
+      padding: 0;
+    }
+
+    .page-content {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+}
+
+///////////////// End search //////////////////////////////
+///////////////// Begin list review of gacha //////////////////////////////
+.box-rating {
+  .b-rating.form-control {
+    border: 0;
+    background: transparent;
+    width: auto;
+    display: inline-block !important;
+    padding: 0;
+    height: auto;
+    color: $color_black;
+    outline: 0;
+    box-shadow: 0 0 0;
+  }
+
+  &__number {
+    font-size: 2.1em;
+    color: $color_black;
+    font-weight: 700;
+  }
+
+  .b-rating:not(.disabled):not(.readonly):focus:not(:hover) .b-rating-star.focused .b-rating-icon, .b-rating:not(.disabled):not(.readonly) .b-rating-star:hover .b-rating-icon {
+    transform: scale(1);
+  }
+}
+
+.gr-review {
+  &__item {
+    background: white;
+    padding: 15px 15px 30px;
+  }
+
+  &__user {
+    padding: 15px;
+  }
+
+  &__company {
+    border: 1px solid $color_border_review;
+    padding: 20px;
+  }
+
+  &__company-content,
+  &__content {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: $color_black;
+  }
+
+  &__company-name {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: $color_name_company;
+  }
+}
+
+@media (min-width: 768px) {
+  .gr-review {
+    &__rating {
+      width: 35%;
+    }
+
+    &__content {
+      width: 65%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-rating {
+    .b-rating.form-control {
+      font-size: 2.8em;
+    }
+
+    &__number {
+      font-size: 3.5em;
+    }
+  }
+
+  .gr-review {
+    &__rating {
+      width: 310px;
+    }
+
+    &__rating-total {
+      padding-left: 45px;
+    }
+
+    &__content {
+      width: calc(100% - 310px);
+    }
+
+    &__item {
+      padding: 25px 30px 30px;
+    }
+
+    &__company {
+      margin-top: 30px;
+      padding: 20px 50px;
+    }
+  }
+
+  .page-gacha-review {
+    .g-view-more {
+      padding-left: 45px;
+    }
+
+    .btn-back {
+      font-size: 2em;
+    }
+  }
+}
+
+///////////////// End list review of gacha //////////////////////////////
+///////////////// Begin gacha detail //////////////////////////////
+.gd-info-gacha {
+  padding: 20px 24px;
+
+  &__left {
+    width: 39%;
+
+    .carousel-item {
+      height: 120px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__right {
+    padding-left: 20px;
+    width: 61%;
+
+    &.full {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+
+  &__title {
+    h1 {
+      font-size: 1.8em;
+      color: $color_black;
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    font-size: 1.4em;
+    color: $color_black;
+    font-weight: 500;
+  }
+
+  &__rating {
+    .box-rating__number {
+      font-size: 1.4em;
+    }
+
+    &.box-rating .b-rating.form-control {
+      font-size: 1.3em;
+    }
+  }
+
+  &__stock {
+    font-size: 1.6em;
+    color: $color_black;
+    font-weight: 700;
+  }
+
+  &__price {
+    flex-wrap: wrap;
+
+    span {
+      font-size: 2em;
+      color: $color_black;
+      font-weight: 700;
+    }
+
+    .form-control {
+      width: 80px;
+      height: 41px;
+    }
+
+    svg {
+      font-size: 2em;
+      color: $bg_favorites;
+      position: relative;
+      top: -2px;
+
+      &.active {
+        color: $bg_favorites_active;
+      }
+    }
+  }
+}
+
+.gd-info-product {
+  padding: 15px 15px 25px;
+
+  .gacha__list {
+    width: 100%;
+    margin: 0;
+  }
+
+  .gacha__name {
+    text-align: center;
+  }
+
+  .gacha__images {
+    height: 160px;
+  }
+}
+
+#modal-login {
+  .form-group {
+    flex-direction: column;
+
+    label {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+  }
+
+  .form-control {
+    margin-top: 10px;
+    font-size: 1.2em;
+    height: 32px;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+#modal-buy-gacha {
+  .gd-info-gacha__coupon {
+    .form-group {
+      label {
+        font-size: 1em;
+        font-weight: 700;
+        margin-bottom: 0;
+        width: 125px;
+      }
+    }
+
+    .form-control {
+      font-size: 1.2em;
+      height: 40px;
+    }
+  }
+
+  .gd-info-gacha.full {
+    width: 100%;
+
+    .gd-info-gacha__right {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .gd-info-gacha__total {
+    padding-top: 10px;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: $color_label_input;
+    border-top: 1px solid $color_grey;
+  }
+}
+
+#modal-payment-error {
+  .modal-body {
+    h3 {
+      color: $color_black;
+      font-size: 1.8em;
+      font-weight: 700;
+    }
+
+    p {
+      color: $color_input;
+      font-size: 1.4em;
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .gd-info-gacha__price {
+    span {
+      font-size: 1.7em;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .gd-info-gacha {
+    &__left {
+      width: 29%;
+    }
+
+    &__right {
+      width: 71%;
+      padding-left: 30px;
+    }
+
+    &__message-login {
+      color: $color_label_input;
+      font-size: 1.6em;
+      margin-top: 15px;
+    }
+  }
+
+  .gd-info-product {
+    .gacha__list {
+      width: calc(100% + 36px);
+      margin-left: -18px;
+    }
+
+    .gacha__box.full {
+      width: calc(50% - 36px);
+      margin: 36px 18px 0;
+    }
+  }
+
+  #modal-buy-gacha {
+    .gd-info-gacha.full .gd-info-gacha__price {
+      padding-left: calc(29% + 30px);
+    }
+  }
+
+  .page__content {
+    & > .gd-info-gacha .gd-info-gacha__right.full {
+      padding-left: calc(29% + 42px);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .gd-info-gacha {
+    padding: 90px 35px 20px;
+
+    &__right {
+      padding-left: 90px;
+    }
+
+    &__title h1 {
+      font-size: 3em;
+    }
+
+    &__description {
+      font-size: 1.8em;
+    }
+
+    &__rating .box-rating__number {
+      font-size: 1.8em;
+    }
+
+    &__rating.box-rating .b-rating.form-control {
+      font-size: 1.6em;
+    }
+
+    &__stock {
+      font-size: 2em;
+    }
+
+    &__price span:first-child {
+      font-size: 3em;
+    }
+
+    &__price .form-control {
+      width: 100px;
+      height: 50px;
+    }
+
+    &__price svg {
+      font-size: 4.2em;
+    }
+  }
+
+  .gacha__reward-type {
+    font-size: 3em;
+  }
+
+  .gd-info-product .gacha__box.full {
+    width: calc(33.3% - 36px);
+  }
+
+  #modal-login {
+    .form-group {
+      flex-direction: row;
+
+      label {
+        font-size: 1.6em;
+        margin-bottom: 0;
+      }
+
+      legend, label:not(.custom-control-label) {
+        width: 200px;
+      }
+
+      legend + div, label:not(.custom-control-label) + div {
+        width: calc(100% - 200px);
+      }
+    }
+
+    .form-control {
+      margin-top: 10px;
+      font-size: 1.6em;
+      height: 50px;
+    }
+  }
+
+
+  #modal-buy-gacha {
+    .gd-info-gacha__title h1 {
+      font-size: 2.5em;
+    }
+
+    .gd-info-gacha__coupon {
+      padding-top: 30px;
+    }
+
+    .gd-info-gacha__coupon .form-group label {
+      font-size: 1.6em;
+      width: auto;
+      padding-right: 20px;
+    }
+
+    .gd-info-gacha__coupon .form-control {
+      font-size: 1.6em;
+      width: 400px;
+      height: 50px;
+    }
+
+    .gd-info-gacha__coupon label {
+      font-size: 16px;
+    }
+
+    .gd-info-gacha__total {
+      font-size: 1.6em;
+      padding-top: 20px;
+    }
+
+    .gd-info-gacha.full {
+      padding-bottom: 40px;
+    }
+
+    .gd-info-gacha.full .gd-info-gacha__price {
+      padding-left: calc(29% + 90px);
+    }
+  }
+
+  #modal-payment-error {
+    .modal-body {
+      h3 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 1.8em;
+      }
+    }
+  }
+
+  .page__content {
+    & > .gd-info-gacha .gd-info-gacha__right.full {
+      padding-left: calc(29% + 90px) !important;
+    }
+  }
+
+  .page-gacha-result {
+    .gd-info-gacha__right {
+      .btn {
+        max-width: 238px;
+      }
+    }
+  }
+
+  #modal-success {
+    .title-block {
+      font-size: 3em !important;
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .gd-info-gacha {
+    &__message-login {
+      align-items: center;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-gacha-result {
+    .gd-info-gacha__right {
+      .btn {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+///////////////// End gacha detail //////////////////////////////
+///////////////// Begin my-page - dashboard //////////////////////////////
+.mypage {
+  &__left {
+    &-title {
+      font-size: 2em;
+      font-weight: 300;
+      color: $color_black !important;
+      border: 0 !important;
+      border-bottom: 0.5px solid $bg_form_control !important;
+      position: relative;
+      padding: 10px 0;
+      background: white !important;
+      width: 100%;
+      box-shadow: 0 0 0 !important;
+      outline: 0;
+      border-radius: 0;
+
+      svg {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+      }
+    }
+
+    &-label {
+      background: $bg_mypage_label;
+      font-size: 2em;
+      font-weight: 500;
+      color: white;
+      padding: 16px 0;
+    }
+
+    &-nav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border-bottom: 0.5px solid $bg_form_control;
+
+      li {
+        font-size: 1.4em;
+        font-weight: 500;
+        color: $color_black;
+        position: relative;
+        padding: 0;
+
+        a, div {
+          color: $color_black;
+          text-decoration: none !important;
+          padding: 20px 20px;
+          display: inline-block;
+          width: 100%;
+        }
+      }
+
+      li.active, li:hover {
+        background: $bg_mypage_nav_active !important;
+
+        a, div {
+          color: white;
+        }
+      }
+
+      li:nth-child(2n+1) {
+        background: $bg_form_control;
+      }
+
+      li svg {
+        position: absolute;
+        right: 45px;
+        top: 23px;
+      }
+    }
+  }
+
+  &__info {
+    font-size: 2em;
+    font-weight: 300;
+    color: $color_black;
+  }
+
+  &__sub-title {
+    font-size: 2em;
+    font-weight: 300;
+    color: $color_black;
+    padding-bottom: 10px !important;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    z-index: 10;
+    opacity: 1;
+
+    span {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__breadcrumb {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: $color_black;
+  }
+
+  &__history {
+    position: relative;
+
+    &-content {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+    }
+
+    .gacha__box {
+      margin-top: 0;
+      width: calc(50% - 30px);
+      float: left;
+    }
+  }
+
+  .carousel-item {
+    padding: 10px 0;
+    background: white;
+  }
+
+  .carousel-control-prev span {
+    background: url("../../assets/images/Component-Prev.png") no-repeat center center;
+  }
+
+  .carousel-control-next span {
+    background: url("../../assets/images/Component-Next.png") no-repeat center center;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    width: 50px;
+  }
+
+  .carousel-caption {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    left: 0;
+    border: 0;
+    right: 0;
+  }
+
+  &__notify {
+    &-content:not(.no-border) {
+      border: 1px solid $color_grey;
+    }
+
+    &-content {
+      padding: 20px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0;
+      position: relative;
+
+      a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+    }
+
+    &-item:not(:first-child) {
+      border-top: 1px solid $color_border_notify;
+    }
+
+    &-date, &-title {
+      font-size: 1.8em;
+      font-weight: 500;
+      color: $color_black;
+    }
+
+    .btn {
+      padding: 10px 20px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1366px;
+  }
+
+  .layout__blank {
+    .container {
+      max-width: 100%;
+    }
+  }
+
+  .mypage {
+
+    .page__content {
+      display: flex;
+    }
+
+    &__left {
+      width: 300px;
+
+      &-title {
+        display: none
+      }
+
+      &-label {
+        display: none;
+      }
+
+      &-nav {
+        border-bottom: 0;
+      }
+
+      &-nav li {
+        font-size: 2em;
+      }
+    }
+
+    &__right {
+      width: calc(100% - 300px);
+      padding-left: 80px;
+    }
+
+    #collapse-menu {
+      display: inline-block !important;
+      width: 100%;
+    }
+
+    &__notify-item {
+      flex-direction: row;
+    }
+
+    &__notify-date {
+      width: 210px;
+    }
+
+    &__notify-title {
+      width: calc(100% - 210px);
+    }
+
+    &__history-content {
+      width: 100%;
+      margin-left: 0;
+
+      .carousel-item {
+        padding: 10px 40px;
+      }
+    }
+  }
+}
+
+///////////////// End my-page - dashboard //////////////////////////////
+///////////////// Begin my-page - profile //////////////////////////////
+.mypage__profile {
+  .m-profile__withdraw,
+  .m-profile__item {
+    .btn {
+      font-size: 1.4em;
+      font-weight: 700;
+      height: 30px;
+      line-height: 28px;
+      padding: 0 10px;
+      max-width: 80px;
+      width: 100%;
+    }
+  }
+}
+
+.mypage__sub-title + .btn {
+  position: absolute;
+  top: -4px;
+  right: 0;
+}
+
+.m-profile {
+  &__item {
+    border: 1px solid $color_grey;
+    padding: 10px 15px;
+    margin-top: 20px;
+
+    & > div {
+      font-size: 1.4em;
+      font-weight: 500;
+      color: $color_black;
+    }
+
+    & > div:first-child {
+      min-width: 90px;
+    }
+  }
+
+  &__info-card {
+    &-content {
+      font-size: 1.6em;
+      color: $color_label_input;
+      font-weight: 700;
+      background: $bg_DEDEDE;
+      padding: 10px 25px;
+      width: 100% !important;
+
+      span {
+        margin-left: 20px;
+        padding: 4px 0;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .m-profile__info-card {
+    max-width: 780px;
+    width: 100%;
+
+    &-title,
+    &-content {
+      padding-right: 100px;
+    }
+  }
+}
+
+///////////////// End my-page - profile //////////////////////////////
+///////////////// Begin my-page - review //////////////////////////////
+.mypage-review {
+  .form-default .form-group legend, .form-default .form-group label {
+    font-weight: 500;
+    color: $color_black;
+    margin-bottom: 5px;
+  }
+
+  .b-rating {
+    font-size: 1.3em !important;
+  }
+
+  .form-default {
+    .form-group .form-control {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .btn {
+      font-size: 1.6em;
+      width: 148px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .mypage-review {
+    .form-default .form-group legend, .form-default .form-group label {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .b-rating {
+      font-size: 1.8em !important;
+      padding-left: 10px;
+    }
+
+    .form-default {
+      .form-group .form-control {
+        font-size: 2em;
+        padding: 5px 0;
+      }
+
+      .form-group textarea.form-control {
+        padding: 15px;
+      }
+    }
+
+    .form-default .btn {
+      font-size: 1.4em;
+      width: 80px;
+      padding: 0;
+      height: 30px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .mypage-review {
+    .form-default .form-group {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+    }
+
+    .form-default .form-group legend, .form-default .form-group label {
+      width: 100%;
+    }
+
+    .form-default .form-group legend + div, .form-default .form-group label:not(.custom-control-label) + div {
+      width: 100%;
+    }
+
+    .form-default .form-group .custom-select:not(.date_of_expiry_month):not(.date_of_expiry_year), .form-default .form-group .form-control {
+      max-width: 100%;
+    }
+  }
+}
+
+///////////////// End my-page - review //////////////////////////////
+///////////////// Begin my-page - notify //////////////////////////////
+.mypage__notify, .mypage__withdraw {
+  &-header {
+    font-size: 2em;
+    font-weight: 700;
+    color: $color_black;
+  }
+
+  &-text {
+    padding-top: 20px;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: $color_black;
+    line-height: 1.7;
+  }
+}
+
+@media (min-width: 768px) {
+  .mypage__notify, .mypage__withdraw {
+    &-header {
+      font-size: 3.6em;
+    }
+
+    &-text {
+      font-size: 1.8em;
+      line-height: 1.8;
+    }
+  }
+}
+
+///////////////// End my-page - notify //////////////////////////////
+///////////////// Begin my-page - withdraw //////////////////////////////
+.mypage-withdraw {
+  .form-default .form-group legend, .form-default .form-group label {
+    margin-bottom: 10px;
+  }
+
+  .form-default .form-group .form-control {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mypage-withdraw {
+    .form-default .form-group {
+      flex-direction: column;
+
+      textarea {
+        max-width: 100%
+      }
+    }
+
+    .form-default .form-group legend, .form-default .form-group label:not(.custom-control-label),
+    .form-default .form-group legend + div, .form-default .form-group label:not(.custom-control-label) + div {
+      width: 100%;
+    }
+  }
+}
+
+///////////////// End my-page - withdraw //////////////////////////////

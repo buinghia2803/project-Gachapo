@@ -1,0 +1,31 @@
+// Width
+$width: 50px, 70px, 100px, 150px, 200px, 250px, 300px;
+@each $w in $width {
+    .w-#{$w} {
+        width: $w !important;
+    }
+}
+
+// Min width
+$minWidth: 50px, 70px, 100px, 150px, 200px, 250px, 300px;
+@each $w in $minWidth {
+    .mw-#{$w} {
+        min-width: $w !important;
+    }
+}
+
+// Height
+$height: 30px, 40px, 300px;
+@each $h in $height {
+    .h-#{$h} {
+        height: $h !important;
+    }
+}
+
+// Line Height
+$line-height: 30px, 40px;
+@each $lh in $line-height {
+    .lh-#{$lh} {
+        line-height: $lh !important;
+    }
+}

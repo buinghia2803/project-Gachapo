@@ -1,0 +1,182 @@
+.custom-control {
+  padding-left: 30px;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+}
+
+.custom-control-input {
+  width: 21px;
+  height: 21px;
+}
+
+.custom-control-label {
+  &::after, &::before {
+    width: 21px;
+    height: 21px;
+    top: 0;
+    left: -30px
+  }
+}
+
+
+//////////// Form ///////////////
+.form-default {
+  .form-group {
+    a {
+      // font-size: 1.4em;
+    }
+
+    legend,
+    label {
+      font-size: 1.6em;
+      font-weight: 700;
+      color: $color_label_input;
+      margin-bottom: 20px;
+
+      a {
+        color: $color_label_input;
+
+        &.text-decoration {
+          text-decoration: underline;
+        }
+      }
+
+      &.normal {
+        font-weight: 500;
+      }
+    }
+
+    .custom-select {
+      height: 46px;
+      color: $color_input;
+      font-size: 1.6em;
+      font-weight: 400;
+      padding-left: 20px;
+      border-color: $color_border_input;
+    }
+
+    .form-control {
+      height: 46px;
+      color: $color_input;
+      font-size: 1.6em;
+      font-weight: 400;
+      padding-left: 20px;
+      color: #3B4043;
+
+      &:not(.is-invalid) {
+        border-color: $color_border_input;
+      }
+    }
+
+    .invalid-feedback {
+      font-size: 1.3em;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .form-inline .input-group, .form-inline .custom-select {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .custom-control {
+    padding-left: 50px;
+  }
+
+  .custom-control-input,
+  .custom-control-label::after, .custom-control-label::before {
+    width: 30px;
+    height: 30px;
+  }
+
+
+  .custom-control-label::after, .custom-control-label::before {
+    left: -50px;
+  }
+
+  .form-default {
+    .form-group {
+      display: flex;
+      align-items: baseline;
+
+      .custom-select:not(.date_of_expiry_month):not(.date_of_expiry_year),
+      .form-control {
+        // max-width: 400px;
+        width: 100%;
+      }
+
+      .custom-select,
+      .form-control {
+        height: 50px;
+      }
+
+      legend,
+      label {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      legend,
+      label:not(.custom-control-label) {
+        width: 270px;
+
+        & + div {
+          width: calc(100% - 270px);
+        }
+      }
+
+      legend.full {
+        width: 100% !important;
+      }
+
+      .custom-control {
+        padding-left: 37px;
+        margin-bottom: 20px;
+      }
+
+      .custom-control-input,
+      .custom-control-label::after, .custom-control-label::before {
+        width: 20px;
+        height: 20px;
+      }
+
+
+      .custom-control-label::after, .custom-control-label::before {
+        left: -37px;
+      }
+    }
+  }
+
+  .label-required-pc {
+    position: relative;
+
+    &::before {
+      content: "必須";
+      color: $color_required;
+      padding-right: 25px;
+    }
+  }
+
+  .box-credit-card {
+    & > legend + div {
+      width: 100% !important;
+    }
+
+    div fieldset {
+      legend {
+        width: 270px;
+        float: left;
+      }
+
+      legend + div {
+        width: calc(100% - 270px);
+      }
+    }
+  }
+}

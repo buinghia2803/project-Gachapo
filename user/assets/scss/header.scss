@@ -1,0 +1,263 @@
+//////// header blank ///////
+.layout__blank {
+  background: $bg_form_control;
+}
+.___header-blank {
+  padding: 17px 0 5px;
+  background: white;
+
+  .header-blank__logo {
+    font-family: $font-family-bank-gothic;
+    font-size: 2em;
+    color: $color_black;
+    font-weight: 300;
+  }
+
+  .header-blank__type {
+    font-family: $font-family-bank-gothic;
+    font-size: 1.2em;
+    color: $bg_red;
+    font-weight: 300;
+    border: 1px solid $bg_red;
+    padding: 6px 15px;
+  }
+
+  .header-blank__info {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .___header-blank {
+    background: $bg_form_control;
+    padding: 16px 0;
+
+    .header-blank__logo {
+      font-size: 3em;
+    }
+
+    .header-blank__type {
+      font-size: 2.5em;
+    }
+
+    .header-blank__info {
+      display: flex !important;
+    }
+  }
+}
+///////////////////////////
+.__header:not(.___header-blank) {
+  padding: 20px 5px 15px;
+  border-bottom: 0.5px solid $bg_form_control;
+  background: white;
+
+  .form-control__search {
+    font-size: 1.4em;
+    color: $color_grey;
+    font-weight: 500;
+    border-radius: 6px !important;
+    background: $bg_form_control;
+    padding-right: 75px;
+    border: 1px solid $color_grey;
+    height: 40px;
+  }
+
+  .header__btn-search {
+    font-weight: 700;
+    font-size: 1.6em;
+    color: $color_black;
+    border: 1px solid $color_grey;
+    border-radius: 6px !important;
+    padding: 7px 14px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    background: white;
+    z-index: 99;
+  }
+}
+
+.search-nar-bar {
+  width: 100% !important;
+}
+
+.navbar-brand.header__logo {
+  font-family: $font-family-bank-gothic;
+  font-size: 2em;
+  color: $color_black !important;
+  font-weight: 300;
+}
+
+.link-register-company {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  z-index: 2;
+  font-size: 1.2em;
+  color: $color_black;
+  font-weight: 700;
+  width: auto;
+  left: auto;
+}
+
+.__filters {
+  .filter__text {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: $color_black;
+    list-style: none;
+    cursor: pointer;
+
+    a {
+      color: $color_black;
+      outline: 0;
+    }
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .dropdown-menu {
+    max-width: 500px;
+    border: 0;
+    width: 100vw;
+    position: absolute !important;
+    transform: translate3d(0, 0, 0px) !important;
+    padding: 30px 35px;
+    border-radius: 0;
+    margin: 52px 0 0 -42px;
+  }
+}
+
+.box-filter {
+  .btn-search,
+  .custom-control-label,
+  .custom-control {
+    font-size: 1.13rem;
+  }
+
+  .col-form-label {
+    padding-left: 30px;
+    color: $color_black;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .custom-control-input {
+    width: 20px;
+    height: 20px;
+  }
+
+  .custom-control-inline {
+    margin: 0 0 5px 0;
+    width: 100%;
+  }
+
+  .custom-control-label::after, .custom-control-label::before {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+  }
+
+  .custom-control-label {
+    font-weight: 500;
+  }
+}
+
+.header__user-name {
+  color: $color_black;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+@media (min-width: 360px) {
+  .link-register-company {
+    font-size: 1.4em;
+    top: 6px;
+  }
+}
+
+
+@media (min-width: 576px) {
+  .link-register-company {
+    right: calc((100vw - 540px)/2);
+  }
+}
+
+@media (min-width: 768px) {
+  .link-register-company {
+    position: unset;
+  }
+
+  .search-nar-bar {
+    width: auto !important;
+    margin: 0 10px;
+  }
+
+  .header__top {
+    flex-wrap: unset;
+  }
+
+  .__header {
+    .form-control__search {
+      font-size: 1.8em;
+      height: 50px;
+    }
+
+    .header__btn-search {
+      font-size: 1.8em;
+      padding: 7px 14px;
+      height: 50px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .__filters .dropdown-menu {
+    width: calc(100vw - 17px);
+  }
+
+  .navbar-brand.header__logo {
+    pointer-events: painted;
+    font-size: 3em;
+  }
+
+  .search-nar-bar {
+    max-width: 635px;
+    width: 100% !important;
+
+    .form-search {
+      width: 100%;
+    }
+  }
+
+  .__header {
+    .form-control__search {
+      padding: 10px 100px 10px 15px;
+    }
+
+    .header__btn-search {
+      font-size: 2.1em;
+      min-width: 90px;
+    }
+  }
+
+  .link-register-company {
+    font-size: 1.8em;
+  }
+
+  .__filters .dropdown-menu {
+    margin: 57px 0 0 -42px;
+  }
+
+  .box-filter {
+    .col-form-label {
+      padding-left: 48px;
+    }
+
+    .filter__text {
+      font-size: 1.8em;
+    }
+  }
+}

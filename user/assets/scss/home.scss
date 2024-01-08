@@ -1,0 +1,284 @@
+@import "color";
+@import "variable";
+@import "button";
+@import "form";
+
+#main-visual {
+  .carousel-item {
+    height: 140px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.banner-top__item img {
+  width: 100%;
+}
+
+.about-top {
+  padding: 45px 0 35px;
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.8em;
+    color: $color_black;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 1.4em;
+    color: $color_black;
+
+  }
+
+  &__content {
+    background: $bg_about;
+    padding: 40px 25px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+.flow-top {
+  padding: 20px 0 60px;
+
+  &__content {
+    padding: 0 25px;
+  }
+
+  &__item {
+    span {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      font-weight: 700;
+      font-size: 3em;
+      color: $color_black;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+.category-top {
+  padding: 55px 0 20px;
+
+  &__content {
+    legend {
+      font-weight: 700;
+      font-size: 1.4em;
+      color: $color_black;
+    }
+
+    .custom-radio {
+      font-weight: 700;
+      font-size: 1.3em;
+      color: $color_black;
+      margin: 8px 15px;
+    }
+
+    .form-group {
+      & > div {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .type-price {
+      .custom-control {
+        width: calc(50% - 30px);
+      }
+    }
+  }
+}
+
+@media (min-width: 568px) {
+  #main-visual {
+    .carousel-item {
+      height: 240px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-top {
+    padding: 30px 0;
+
+    .banner-top__wrap {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .banner-top__item {
+      width: calc(50% - 40px);
+      margin: 20px;
+    }
+  }
+
+  .about-top {
+    h3 {
+      font-size: 3em;
+    }
+
+    p {
+      font-size: 1.8em;
+    }
+  }
+
+  .flow-top {
+    padding: 20px 0 30px;
+
+    &__content {
+      width: calc(100% + 40px);
+      margin: 0 auto;
+      padding: 0;
+      max-width: 940px;
+    }
+
+    &__item {
+      width: calc(33.3% - 40px);
+      margin: 0 20px;
+      height: 270px;
+
+      img {
+        max-width: 270px;
+      }
+    }
+  }
+
+  .category-top {
+    &__content legend {
+      font-size: 2.5em;
+    }
+
+    &__content .custom-radio {
+      font-size: 1.8em;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #main-visual {
+    .carousel-item {
+      height: 400px;
+    }
+  }
+
+  .banner-top__item img {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .about-top {
+    padding: 130px 0 60px;
+
+    h3 {
+      margin-bottom: 45px;
+    }
+
+    p {
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    &__content {
+      padding: 60px 25px;
+      min-height: 400px;
+    }
+  }
+
+  .flow-top {
+    padding: 60px 0 45px;
+
+    &__content {
+      padding-top: 20px;
+    }
+
+    &__item span {
+      top: 5px;
+      left: 10px;
+    }
+  }
+
+  .category-top__content {
+    .form-group > div {
+      width: 100%;
+      margin: 0;
+
+    }
+    .custom-radio {
+      margin: 15px 0;
+      width: 25%;
+      align-items: baseline;
+      padding-right: 15px;
+    }
+
+    .type-price .custom-control {
+      width: 25%;
+    }
+  }
+
+  .list-gacha-new,
+  .list-gacha-recommend,
+  .list-gacha-popular {
+    border-top: 30px solid $bg_form_control;
+    background: white;
+    overflow: hidden;
+
+    &__wrap {
+      position: relative;
+    }
+
+    .gacha__scroll {
+      overflow-y: auto;
+      height: auto;
+    }
+
+    .gacha__list {
+      width: auto;
+      flex-wrap: unset;
+      padding: 0 5px;
+
+      .gacha__box {
+        width: 320px;
+        margin: 15px;
+      }
+    }
+
+    .g-view-more {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &:after {
+        content: "＞";
+      }
+    }
+  }
+  .gacha__row {
+    // width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1366px) {
+
+  .list-gacha-new,
+  .list-gacha-recommend,
+  .list-gacha-popular {
+    .gacha__scroll {
+      width: calc(100vw - (100vw - 1279px)/2);
+    }
+  }
+}
+

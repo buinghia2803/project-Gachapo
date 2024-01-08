@@ -1,0 +1,539 @@
+$font-size: 10px;
+$font-family: 'Noto Sans JP', sans-serif;
+$font-family-bank-gothic: 'Noto Sans JP', sans-serif;
+$font-family-hiragino-kaku-gothic: 'Noto Sans JP', sans-serif;
+$line-height: 1.4;
+$color_black: #000000;
+$color_grey: #707070;
+$color_grey_2: #434343;
+$color_link: #0089FF;
+$color_blue: #004BB1;
+$color_blue_2: #0089FF;
+$color_green: #0DB75B;
+$color_required: #F25D5D;
+$color_icon: #959595;
+$color_name_company: #4B4949;
+$color_border_review: #C4BEBE;
+$color_border_notify: #CCCCCC;
+$bg_form_control: #F5F5F5;
+$bg_about: #F0F8FE;
+$bg_red: #F00000;
+$bg_222222: #222222;
+$bg_DEDEDE: #DEDEDE;
+$bg_favorites: #98A6B5;
+$bg_favorites_active: $bg_red;
+$bg_mypage_label: #A3A3A3;
+$bg_mypage_nav_active: #00CBF0;
+
+$color_label_input: #707F89;
+$color_border_input: #CDD6DD;
+$color_input: #3B4043;
+
+$color_border_paging: #dee2e6;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+.gd-info-gacha {
+    padding: 20px 24px;
+
+    &__left {
+        width: 39%;
+
+        .carousel-item {
+            height: 120px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__right {
+        padding-left: 20px;
+        width: 61%;
+
+        &.full {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
+    &__title {
+        h1 {
+            font-size: 1.8em;
+            color: $color_black;
+            font-weight: 700;
+        }
+    }
+
+    &__description {
+        font-size: 1.4em;
+        color: $color_black;
+        font-weight: 500;
+    }
+
+    &__rating {
+        .box-rating__number {
+            font-size: 1.4em;
+        }
+
+        &.box-rating .b-rating.form-control {
+            font-size: 1.3em;
+        }
+    }
+
+    &__stock {
+        font-size: 1.6em;
+        color: $color_black;
+        font-weight: 700;
+    }
+
+    &__price {
+        flex-wrap: wrap;
+
+        span {
+            font-size: 2em;
+            color: $color_black;
+            font-weight: 700;
+        }
+
+        .form-control {
+            width: 80px;
+            height: 41px;
+        }
+
+        svg {
+            font-size: 2em;
+            color: $bg_favorites;
+            position: relative;
+            top: -2px;
+
+            &.active {
+                color: $bg_favorites_active;
+            }
+        }
+    }
+}
+
+.gd-info-product {
+    padding: 15px 15px 25px;
+
+    .gacha__list {
+        width: 100%;
+        margin: 0;
+    }
+
+    .gacha__name {
+        text-align: center;
+    }
+
+    .gacha__images {
+        height: 160px;
+    }
+}
+
+#modal-login {
+    .form-group {
+        flex-direction: column;
+
+        label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+    }
+
+    .form-control {
+        margin-top: 10px;
+        font-size: 1.2em;
+        height: 32px;
+    }
+
+    br {
+        display: none;
+    }
+}
+
+#modal-buy-gacha {
+    .gd-info-gacha__coupon {
+        .form-group {
+            label {
+                font-size: 1em;
+                font-weight: 700;
+                margin-bottom: 0;
+                width: 125px;
+            }
+        }
+
+        .form-control {
+            font-size: 1.2em;
+            height: 40px;
+        }
+    }
+
+    .gd-info-gacha.full {
+        width: 100%;
+
+        .gd-info-gacha__right {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    .gd-info-gacha__total {
+        padding-top: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+        color: $color_label_input;
+        border-top: 1px solid $color_grey;
+    }
+}
+
+#modal-payment-error {
+    .modal-body {
+        h3 {
+            color: $color_black;
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+
+        p {
+            color: $color_input;
+            font-size: 1.4em;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .gd-info-gacha__price {
+        span {
+            font-size: 1.7em;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .gd-info-gacha {
+        &__left {
+            width: 29%;
+        }
+
+        &__right {
+            width: 71%;
+            padding-left: 30px;
+        }
+
+        &__message-login {
+            color: $color_label_input;
+            font-size: 1.6em;
+            margin-top: 15px;
+        }
+    }
+
+    .gd-info-product {
+        .gacha__list {
+            width: calc(100% + 36px);
+            margin-left: -18px;
+        }
+
+        .gacha__box.full {
+            width: calc(50% - 36px);
+            margin: 36px 18px 0;
+        }
+    }
+
+    #modal-buy-gacha {
+        .gd-info-gacha.full .gd-info-gacha__price {
+            padding-left: calc(29% + 30px);
+        }
+    }
+
+    .page__content {
+        & > .gd-info-gacha .gd-info-gacha__right.full {
+            padding-left: calc(29% + 42px);
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .page-gacha-result {
+        .gd-info-gacha__right {
+            .btn {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .gd-info-gacha {
+        &__message-login {
+            align-items: center;
+            margin-left: 15px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .gd-info-gacha {
+        padding: 90px 35px 20px;
+
+        &__right {
+            padding-left: 90px;
+        }
+
+        &__title h1 {
+            font-size: 3em;
+        }
+
+        &__description {
+            font-size: 1.8em;
+        }
+
+        &__rating .box-rating__number {
+            font-size: 1.8em;
+        }
+
+        &__rating.box-rating .b-rating.form-control {
+            font-size: 1.6em;
+        }
+
+        &__stock {
+            font-size: 2em;
+        }
+
+        &__price span:first-child {
+            font-size: 3em;
+        }
+
+        &__price .form-control {
+            width: 100px;
+            height: 50px;
+        }
+
+        &__price svg {
+            font-size: 4.2em;
+        }
+    }
+
+    .gacha__reward-type {
+        font-size: 3em !important;
+    }
+
+    .gd-info-product .gacha__box.full {
+        width: calc(33.3% - 36px);
+    }
+
+    #modal-login {
+        .form-group {
+            flex-direction: row;
+
+            label {
+                font-size: 1.6em;
+                margin-bottom: 0;
+            }
+
+            legend, label:not(.custom-control-label) {
+                width: 200px;
+            }
+
+            legend + div, label:not(.custom-control-label) + div {
+                width: calc(100% - 200px);
+            }
+        }
+
+        .form-control {
+            margin-top: 10px;
+            font-size: 1.6em;
+            height: 50px;
+        }
+    }
+
+
+    #modal-buy-gacha {
+        .gd-info-gacha__title h1 {
+            font-size: 2.5em;
+        }
+
+        .gd-info-gacha__coupon {
+            padding-top: 30px;
+        }
+
+        .gd-info-gacha__coupon .form-group label {
+            font-size: 1.6em;
+            width: auto;
+            padding-right: 20px;
+        }
+
+        .gd-info-gacha__coupon .form-control {
+            font-size: 1.6em;
+            width: 400px;
+            height: 50px;
+        }
+
+        .gd-info-gacha__coupon label {
+            font-size: 16px;
+        }
+
+        .gd-info-gacha__total {
+            font-size: 1.6em;
+            padding-top: 20px;
+        }
+
+        .gd-info-gacha.full {
+            padding-bottom: 40px;
+        }
+
+        .gd-info-gacha.full .gd-info-gacha__price {
+            padding-left: calc(29% + 90px);
+        }
+    }
+
+    #modal-payment-error {
+        .modal-body {
+            h3 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.8em;
+            }
+        }
+    }
+
+    .page__content {
+        & > .gd-info-gacha .gd-info-gacha__right.full {
+            padding-left: calc(29% + 90px) !important;
+        }
+    }
+
+    .page-gacha-result {
+        .gd-info-gacha__right {
+            .btn {
+                max-width: 238px;
+            }
+        }
+    }
+
+    #modal-success {
+        .title-block {
+            font-size: 3em !important;
+        }
+    }
+}
+
+///////////////// End gacha detail //////////////////////////////
+
+.gacha__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+}
+
+.gacha__box {
+    margin: 40px 15px 0;
+    width: calc(50% - 30px);
+    padding: 0;
+
+    &.full {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.gacha__reward-type {
+    font-size: 1.6em;
+    color: $color_black;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.gacha__item {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.gacha__quality {
+    font-size: 1.6em;
+    color: $color_grey;
+    font-family: $font-family-hiragino-kaku-gothic;
+}
+
+.gacha__images {
+    height: 100px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.gacha__name {
+    font-size: 1.6em;
+    color: $color_grey;
+    font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+    .gacha__item {
+        padding: 10px 15px 20px;
+    }
+
+    .gacha__name {
+        font-size: 1.8em;
+    }
+
+    .gacha__images {
+        height: 167px;
+    }
+}
+
+.b-none {
+    border: none !important;
+}
+
+.b-rating {
+    .b-rating-star,
+    .b-rating-value {
+        padding: 0 0.25em;
+        .b-rating-icon {
+            display: inline-flex;
+        }
+    }
+}
+
+.btn-red {
+    background: #F00000;
+    &:hover {
+        background: #F00000;
+        border-color: #F00000;
+    }
+}
+
+.max-w-300 {
+    max-width: 300px;
+    width: 100%;
+}
+
+.btn-medium {
+    height: 60px;
+    border-radius: 5px;
+}
+
+.box-shadow {
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+
+.hidden-sp {
+    display: none;
+}
+@media (min-width: 768px) {
+    .hidden-sp {
+        display: inline-block;
+    }
+}

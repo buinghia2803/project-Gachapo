@@ -1,0 +1,68 @@
+.gacha__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+}
+
+.gacha__box {
+  margin: 40px 15px 0;
+  width: calc(50% - 30px);
+  padding: 0;
+
+  &.full {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.gacha__reward-type {
+  font-size: 1.6em;
+  color: $color_black;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.gacha__item {
+  margin: 0;
+  width: 100%;
+  min-width: 160px;
+  padding: 10px;
+}
+
+.gacha__quality {
+  font-size: 1.6em;
+  color: $color_grey;
+  font-family: $font-family-hiragino-kaku-gothic;
+}
+
+.gacha__images {
+  height: 100px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gacha__name {
+  font-size: 1.6em;
+  color: $color_grey;
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .gacha__item {
+    padding: 10px 15px 20px;
+  }
+
+  .gacha__name {
+    font-size: 1.8em;
+  }
+
+  .gacha__images {
+    height: 167px;
+  }
+}

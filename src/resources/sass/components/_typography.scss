@@ -1,0 +1,11 @@
+$sizes: 16px 18px 20px;
+
+@each $size in $sizes {
+    .fz-#{$size} {
+        font-size: $size;
+    }
+}
+
+.white-space-pre {
+    white-space: pre;
+}
